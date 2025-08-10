@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bank of Kigali</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    /* Moving bank name banner */
+    .marquee {
+      background: rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      border-bottom: 2px solid #00f0ff;
+    }
+    .marquee h1 {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marqueeAnim 15s linear infinite;
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: 3px;
+      color: #e0f7fa;
+      margin: 10px 0;
+    }
+    @keyframes marqueeAnim {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    nav {
+      background-color: rgba(0, 77, 128, 0.85);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+    nav a {
+      color: #b3e5fc;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #00f0ff;
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00d2ffaa;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #00f0ff;
+      border-bottom: 2px solid #00e5ff;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      font-size: 1.1rem;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    form {
+      max-width: 320px;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00d2ffaa;
+      color: white;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #00bcd4;
+      color: #00303f;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #008c9e;
+      color: #e0f7fa;
+    }
+    footer {
+      background-color: rgba(0, 77, 128, 0.85);
+      color: #b3e5fc;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="marquee">
+    <h1>Bank of Kigali</h1>
+  </div>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#online-credit">Online Credit</a>
+    <a href="#login">Online Banking</a>
+    <a href="#contact">Contact</a>
+    <a href="#branches">Branches</a>
+  </nav>
+
+  <main>
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Savings Accounts</li>
+        <li>Checking Accounts</li>
+        <li>Personal and Business Loans</li>
+        <li>Credit Cards</li>
+        <li>Investment Services</li>
+      </ul>
+    </section>
+
+    <section id="online-credit">
+      <h2>Online Credit</h2>
+      <p>Apply for credit easily from home with our secure online application system. Fast approval and flexible repayment plans tailored to your needs.</p>
+      <button onclick="alert('Online Credit application coming soon!')">Apply Now</button>
+    </section>
+
+    <section id="login">
+      <h2>Online Banking Login</h2>
+      <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" />
+
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:support@bankofkigali.rw" style="color:#00e5ff;">support@bankofkigali.rw</a></p>
+      <p>Phone: +250 788 123 456</p>
+      <p>Address: KG 5 Ave, Kigali, Rwanda</p>
+    </section>
+
+    <section id="branches">
+      <h2>Our Branches</h2>
+      <ul>
+        <li>Kigali Central Branch</li>
+        <li>Musanze Branch</li>
+        <li>Huye Branch</li>
+        <li>Rubavu Branch</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Bank of Kigali. All rights reserved.
+  </footer>
+
+</body>
+</html>
